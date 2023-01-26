@@ -1,0 +1,55 @@
+/* Background da página */
+main {
+    background-color: #AEABAB;
+}
+
+/* Container */
+
+.container {
+    background: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.251);
+    
+    padding: 2em 20%;
+}
+@media (max-width: 769px) {
+    .container {
+        padding: 2em 3%;
+    }
+    }
+
+/* Título da página */
+#tituloDaPagina {
+    margin-bottom: 0.8em;
+}
+
+/* Estilo da seção de métodos de recuperação */
+.row {
+    margin-bottom: 1rem;
+    width: 100%;
+
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+input[name="mdRecuperacao"] {
+    width: 10%;
+    height: 25px;
+    margin: 0 0.5em;
+}
+
+.mtLabel {
+    width: 90%;
+}
+
+/* Botão Enviar */
+.btn-primary {
+    --bs-btn-bg: #535CA9;
+    --bs-btn-border-color: #434A89;
+    --bs-btn-hover-bg: #434A89;
+    --bs-btn-hover-border-color: #434A89;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-bg: #5b65bd;
+    --bs-btn-active-border-color: #434A89;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

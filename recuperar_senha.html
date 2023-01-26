@@ -7,17 +7,17 @@
     <!-- Bootstrap e CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/recuperar_senha.css">    
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <title>Quem somos</title>
+    <title>Recuperar senha</title>
 </head>
 <body>
-   <header>
-    <!-- <div id="logo"></div>
-    <div id="cabecalho"> -->
+
+  <header>
         <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <div id="logo"></div>
+              <div id="logo"><img class="img-fluid" src="/assets/img/logo.png" alt=""></div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,10 +46,45 @@
               </div>
             </div>
         </nav>
-   </header>
-   <main>
+  </header>
+   
+  <main>
+    <div class="container">
+      <h1 class="text-center" id="tituloDaPagina">Recupere sua senha</h1>
 
-   </main>    
+      <!-- Seleção do método de recuperação -->
+      <fieldset>
+        <legend class="text-center">Selecione como deseja recuperar sua senha.</legend>
+
+        <div class="row">
+          <input type="radio" name="mdRecuperacao" id="porEmail">
+          <label for="porEmail" class="mtLabel">Receba um link de recuperação pelo seu e-mail.</label>
+        </div>
+
+        <div class="row">
+          <input type="radio" name="mdRecuperacao" id="porSMS">
+          <label for="porSMS" class="mtLabel">Receba um link de recuperação por SMS.</label>
+        </div>
+
+      </fieldset>
+
+      <!-- Recuperar por e-mail -->
+      <div id="displayEmail" class="visually-hidden-">
+        <label for="email">Digite seu e-mail para receber o link de recuperação.</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com">
+      </div>
+
+      <!-- Recuperar por SMS -->
+      <div id="displaySMS" class="visually-hidden-">
+        <label for="cel">Digite seu celular para receber o link de recuperação.</label>
+        <input type="number" name="cel" id="cel" class="form-control" placeholder="(DDD) XXXXX-XXXX">
+      </div>
+      
+      <div class="d-grid gap-2 my-4">
+        <button type="submit" class="btn btn-primary visually-hidden-">Enviar</button>
+      </div>
+    </div>
+  </main>    
 
     <footer id="rodape">
         <span>©️2023 (nome do serviço). (nome do serviço) and all other (nome do serviço) marks are trademarks of FrontEnders, LLC. All other marks are the property of their respective owners.</span>
