@@ -58,3 +58,13 @@ label {
 }
 
 /* Botão Enviar */
+.btn-primary {
+    --bs-btn-bg: #535CA9;
+    --bs-btn-border-color: #434A89;
+    --bs-btn-hover-bg: #434A89;
+    --bs-btn-hover-border-color: #434A89;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-bg: #5b65bd;
+    --bs-btn-active-border-color: #434A89;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
