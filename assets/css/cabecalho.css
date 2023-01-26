@@ -55,8 +55,18 @@ header{
 
 
 main{
-    padding: 200px;
-    height: 100%;
+    padding: 100px 20%;
+    min-height: 90%;
+}
+@media (max-width: 612px) {
+    main {
+        padding: 10%;
+    }
+}
+@media (max-width: 425px) {
+    main {
+        padding: 3%;
+    }
 }
 
 #rodape{ 
