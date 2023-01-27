@@ -4,3 +4,29 @@
     margin:10px;
 }
 
+main{
+    padding: 50px 10%;
+    min-height: 90%;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (max-width: 612px) {
+    .col-sm {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 425px) {
+    .col-sm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

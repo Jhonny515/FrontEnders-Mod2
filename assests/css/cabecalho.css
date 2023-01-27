@@ -54,10 +54,6 @@ header{
 }
 
 
-main{
-    padding: 200px;
-    height: 100%;
-}
 
 #rodape{ 
     width: 100%;
@@ -74,4 +70,20 @@ main{
     font-size: 13px;
 
     color: white;
+}
+/* Responsividade */
+main{
+    padding: 100px 10%;
+    min-height: 90%;
+}
+
+@media (max-width: 612px) {
+    main {
+        padding: 10%;
+    }
+}
+@media (max-width: 425px) {
+    main {
+        padding: 3%;
+    }
 }
