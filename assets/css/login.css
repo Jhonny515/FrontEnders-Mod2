@@ -45,6 +45,20 @@ label {
     opacity: 1;
 }
 
+/* Mensagem de erro */
+
+.erro {
+    text-align: center;
+    font-weight: bold;
+    font-size: smaller;
+    color: red;
+
+    display: block;
+
+    width: 100%;
+    margin-top: 4px;
+}
+
 /* Links da página */
 .link {
     text-decoration: underline;
