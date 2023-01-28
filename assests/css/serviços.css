@@ -16,6 +16,34 @@ h1{
     padding: 10px;
 }
 
+.card{
+    height: 100%;
+    background-color: #7582F4;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 12em;
+}
+
+.video{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+    flex-grow: 1;
+}
+
+
+.img{
+    width: 250px;
+    height: 200px;
+}
+
 @media (max-width: 612px) {
     .col-sm {
         align-items: center;
@@ -28,5 +56,6 @@ h1{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 200px;
     }
 }
