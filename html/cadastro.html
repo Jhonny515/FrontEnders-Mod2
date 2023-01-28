@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../assets/css/cabecalho.css">
 
     <link rel="stylesheet" href="../assets/css/cadastro.css">
@@ -50,10 +51,11 @@
     </header>
 
    <form>
-      <section id="caixa" >
+      <div id="caixa" >     
+            
             <label class="espaco-label" for="txtNome">Nome:</label>
             <input
-            type="text"
+                        type="text"
             name="txtNome"
             class="form-control"
             id="nome"
@@ -62,9 +64,11 @@
             placeholder="Digite seu nome completo"
             required
             />
+            <p class="mensagemErro"></p>
 
             <label class="espaco-label" for="txtEmail">E-mail:</label>
             <input
+            oninput="vericaEmail()"
             type="email"
             name="txtEmail"
             class="form-control"
@@ -75,6 +79,7 @@
             placeholder="nome@exemplo.com"
             required
             />
+            <p class="mensagemErro" ></p>
 
             <label class="espaco-label" for="txtSenha1">Senha:</label>
             <input
@@ -86,7 +91,10 @@
             maxlength="30"
             placeholder="Digite uma senha"
             required
+            oninput="verificarSenha()"
             />
+            <span></span>
+            <!-- <p class="mensagemErro" ></p> -->
 
             <label class="espaco-label" for="txtSenha2"
             >Confirmação de senha:</label
@@ -100,7 +108,10 @@
             maxlength="30"
             placeholder="Repita a senha"
             required
+            oninput="confirmarSenha()"
             />  
+            <span></span>
+            <!-- <p class="mensagemErro" ></p> -->
 
             <label class="espaco-label" for="txtCEP">CEP:</label>
             <div class="input-group">
@@ -109,10 +120,12 @@
                 name="txtCEP"
                 class="form-control"
                 id="cep"
-                maxlength="8"
+                maxlength="9"
                 placeholder="Digite somente números"
                 required
             />
+            <p class="mensagemErro" ></p>
+           
             <div class="buscarcep">
                 <button class="btncep" type="button" id="btn-cep">
                 Buscar
@@ -125,11 +138,11 @@
             type="text"
             name="txtRua"
             class="form-control"
-            id="rua"
+            id="endereco"
             size="70"
             maxlength="70"
             required
-            />
+            readonly/>         
 
             <label class="espaco-label" for="txtNumero">Número:</label>
             <input
@@ -153,6 +166,7 @@
             maxlength="30"
             />
 
+
             <label class="espaco-label" for="txtBairro">Bairro:</label>
             <input
             type="text"
@@ -162,6 +176,7 @@
             size="40"
             maxlength="40"
             required
+            readonly
             />
 
             <label class="espaco-label" for="txtCidade">Cidade:</label>
@@ -173,8 +188,9 @@
             size="40"
             maxlength="40"
             required
+            readonly
             />
-
+            
             <label class="espaco-label" for="txtEstado">Estado:</label>
             <input
             type="text"
@@ -184,12 +200,14 @@
             size="2"
             maxlength="2"
             required
+            readonly
             />   
+          
           <button id="btncadastro" >Finalizar Cadastro</button>
-
-        </section>
+          
+          </div>
     </form>    
-    <script src="/assets/js/contato.js" ></script>
+    <script src="../assets/js/cadastro.js" ></script>
 
     <footer id="rodape">
         <span>©️2023 (nome do serviço). (nome do serviço) and all other (nome do serviço) marks are trademarks of FrontEnders, LLC. All other marks are the property of their respective owners.</span>
