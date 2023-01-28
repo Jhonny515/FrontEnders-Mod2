@@ -21,6 +21,16 @@ h1{
     background-color: #7582F4;
 }
 
+.modal-content{
+    background-color: #7582F4; 
+    color: white;
+}
+
+.btn{
+    background-color: white;
+    color: #7582F4;
+}
+
 .card-body{
     display: flex;
     flex-direction: column;
@@ -43,6 +53,7 @@ img{
     width: 250px;
     height: 200px;
 }
+
 
 @media (max-width: 612px) {
     .col-sm {

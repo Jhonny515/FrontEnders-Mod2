@@ -59,7 +59,7 @@
                   <div class="card-body">
                     <h5 class="card-title text-center">Campeonato Paulista com mais de 160 horas de transmissão e com multi-telas até 3 telas</h5>
                     <p class="text-center">R$ 24,90</p>
-                    <p class="card-text video"><video width="100%" height="auto" src="../img/Video1.mp4" controls loop></video></p>
+                    <p class="card-text video"><video width="100%" height="auto" src="../img/Video1.mp4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" loop autoplay></video></p>
                   </div>
               </div>
           </div>
@@ -70,7 +70,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-center">Campeonato Paulista + Campeonato Mineiro com mais de 320 horas de transmissão e com multi-telas até 4 telas</h5>
                   <p class="text-center">R$ 50,00</p>
-                  <p class="card-text video"><video width="100%" height="auto" src="../img/Video2.mp4" controls loop></video></p>
+                  <p class="card-text video"><video width="100%" height="auto" src="../img/Video2.mp4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" loop autoplay></video></p>
                 </div>
             </div>
         </div>
@@ -81,11 +81,30 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Campeonato Paulista + Campeonato Mineiro + NBB  com mais de 480 horas de transmissão e com multi-telas até 4 telas</h5>
                 <p class="text-center">R$ 65,00</p>
-                <p class="card-text video"><video width="100%" height="auto" src="../img/Video3.mp4" controls loop></video></p>
+                <p class="card-text video"><video width="100%" height="auto" src="../img/Video3.mp4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" loop autoplay></video></p>
               </div>
           </div>
       </div>
       </div>
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Vamos lá</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Para seguir no vídeo, faça login ou cadastre-se
+            </div>
+            <div class="modal-footer">
+              <a href="#"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button></a>
+              <a href="#"><button type="button" class="btn btn-primary">Cadastre-se</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
    </main>    
 
    
