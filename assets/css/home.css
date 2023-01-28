@@ -1,0 +1,27 @@
+.img1{
+    background-image: url(/assets/img/img_assistindo_ftbol.png);
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    background-image: url(/assets/img/img_saiba_onde_assistir.png);
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:900px){
+    .img1{
+        height: 400px;
+    }
+}
+
+@media(max-width:320px){
+    .img1{
+
+    }
+}
