@@ -1,9 +1,9 @@
 // Preenchimento do Campo aparece a partir da opção selecionada
 
-$('#porEmail').on('change', whichIsActive)
-$('#porSMS').on('change', whichIsActive)
+$('#porEmail').on('change', verifCampos)
+$('#porSMS').on('change', verifCampos)
 
-function whichIsActive() {
+function verifCampos() {
     if ($('#porEmail:checked').val() == 'on') {
         $('#displayEmail').removeClass('visually-hidden'); 
         $('#displaySMS').addClass('visually-hidden'); 
@@ -26,4 +26,19 @@ function whichIsActive() {
             atvBotao()
         }
     }
+}
+
+// Ação do botão Enviar
+
+function actionBtn() {
+    $('.successAlert').css({
+        'right': '1rem'
+    })
+
+    $('.timebar').animate({'width': '0%'}, 5000)
+    setTimeout(()=>{
+        $('.successAlert').css({'right':''}),
+        $('.timebar').css({'width': '100%'})
+    }, 5000)
+    disBotao()
 }

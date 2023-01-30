@@ -1,6 +1,7 @@
 // Botão ativado somente se os campos estiverem ok
-const atvBotao = () => $('.btn').removeAttr('disabled');
+const atvBotao = () => $('.btn').removeAttr('disabled')
 const disBotao = () => $('.btn').prop('disabled', true)
+
 // Validação do E-mail
 
 const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i
@@ -14,11 +15,11 @@ function testEmail() {
     if (regexEmail.test(emailVal)) {
         campoEmail.next().html('&nbsp;')
         campoEmail.css({'border':''})
-        atvBotao()
+        verifCampos()
     } else {
         campoEmail.next().text('E-mail inválido')
         campoEmail.css({'border':'1px solid red'})
-        disBotao()
+        verifCampos()
     }
 }
 
@@ -34,24 +35,43 @@ function testCel () {
     if (regexTel.test(celVal)) {
         campoCel.next().html('&nbsp;')
         campoCel.css({'border':''})
-        atvBotao()
+        verifCampos()
     } else {
         campoCel.next().text('Número de celular inválido')
         campoCel.css({'border':'1px solid red'})
-        disBotao()
+        verifCampos()
+    }
+}
+
+// Validação de senha
+
+const campoSenha = $('#senha')
+
+campoSenha.on('input', testSenha)
+
+function testSenha() {
+    let senhaVal = campoSenha.val()
+
+    if (senhaVal.length < 8 | senhaVal.includes(' ')) {
+        if (senhaVal.length < 8 && senhaVal.includes(' ')) {
+            campoSenha.next().html('Senha não pode ter menos de 8 caracteres. <br> Senha não pode conter espaços.')
+            campoSenha.css({'border':'1px solid red'})
+            verifCampos()
+        } else if (senhaVal.length < 8) {
+            campoSenha.next().html('Senha não pode ter menos de 8 caracteres.')
+            campoSenha.css({'border':'1px solid red'})
+            verifCampos()
+        } else {
+            campoSenha.next().html('Senha não pode conter espaços.')
+            campoSenha.css({'border':'1px solid red'})
+            verifCampos()
+        }
+    } else {
+        campoSenha.next().html('&nbsp;')
+        campoSenha.css({'border':''})
+        verifCampos()
     }
 }
 
 // Confirmar o envio
-$('.btn').on('click', () => {
-    $('.successAlert').css({
-        'right': '1rem'
-    })
-
-    $('.timebar').animate({'width': '0%'}, 5000)
-    setTimeout(()=>{
-        $('.successAlert').css({'right':''})
-        $('.timebar').css({'width': '100%'})
-    }, 5000)
-    disBotao()
-})
+$('.btn').on('click', actionBtn)
