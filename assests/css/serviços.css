@@ -1,9 +1,4 @@
-.container{
-    display: flex;
-    justify-content: space-around;
-    margin:10px;
-}
-
+/* Ajuste da tag main para ajuste dos cards */
 main{
     padding: 50px 10%;
     min-height: 90%;
@@ -16,19 +11,10 @@ h1{
     padding: 10px;
 }
 
+/* Ajuste dos cards  */
 .card{
     height: 100%;
     background-color: #7582F4;
-}
-
-.modal-content{
-    background-color: #7582F4; 
-    color: white;
-}
-
-.btn{
-    background-color: white;
-    color: #7582F4;
 }
 
 .card-body{
@@ -48,25 +34,34 @@ img{
     flex-grow: 1;
 }
 
+/* Ajuste do modal para cores */
+.modal-content{
+    background-color: #7582F4; 
+    color: white;
+}
 
-.img{
-    width: 250px;
-    height: 200px;
+.btn{
+    background-color: white;
+    color: #7582F4;
 }
 
 
+/* Responsidade tablet  */
 @media (max-width: 612px) {
-    .col-sm {
+    .row {
         align-items: center;
         display: flex;
         justify-content: center;
     }
 }
+
+/* Responsidade celular  */
 @media (max-width: 425px) {
-    .col-sm {
+    .row {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 200px;
+        padding: auto;
     }
 }
