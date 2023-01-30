@@ -21,23 +21,22 @@
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-
-
-
 header{
     width: 100%;
-    background: #7582f4;
+    background: #535CA9;
 }
 
 .nav{
-    background: #7582f4 !important;
+    height: 70px;
+    background: #4A5398 !important;
 }
 
-
 #logo{
+    display: flex;
     height: 60px;
     width: 60px;
-
+    margin-bottom: 15px;
+    margin-top: 8px;
 }
 
 .liLogin{
