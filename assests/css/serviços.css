@@ -40,10 +40,6 @@ img{
     color: white;
 }
 
-.btn{
-    background-color: white;
-    color: #7582F4;
-}
 
 
 /* Responsidade tablet  */
@@ -52,7 +48,13 @@ img{
         align-items: center;
         display: flex;
         justify-content: center;
+        width: 100%;
     }
+
+    #direitos{
+        font-size: 5px !important;
+    }
+
 }
 
 /* Responsidade celular  */
@@ -61,7 +63,10 @@ img{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 200px;
-        padding: auto;
+        width: 100%;
+    }
+
+    #direitos{
+        font-size: 5px !important;
     }
 }
