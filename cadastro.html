@@ -51,11 +51,11 @@
     </header>
 
    <form>
-      <div id="caixa" >     
-            
+      <div id="caixa m-w 1199.98px" >     
+            <div id="box" >
             <label class="espaco-label" for="txtNome">Nome:</label>
             <input
-                        type="text"
+            type="text"
             name="txtNome"
             class="form-control"
             id="nome"
@@ -91,10 +91,8 @@
             maxlength="30"
             placeholder="Digite uma senha"
             required
-            oninput="verificarSenha()"
-            />
-            <span></span>
-            <!-- <p class="mensagemErro" ></p> -->
+            oninput="verificarSenha()">            
+            <p class="mensagemErro" ></p>
 
             <label class="espaco-label" for="txtSenha2"
             >Confirmação de senha:</label
@@ -109,9 +107,8 @@
             placeholder="Repita a senha"
             required
             oninput="confirmarSenha()"
-            />  
-            <span></span>
-            <!-- <p class="mensagemErro" ></p> -->
+            />            
+            <p class="mensagemErro" ></p>
 
             <label class="espaco-label" for="txtCEP">CEP:</label>
             <div class="input-group">
@@ -121,7 +118,7 @@
                 class="form-control"
                 id="cep"
                 maxlength="9"
-                placeholder="Digite somente números"
+                placeholder="99999-000"
                 required
             />
             <p class="mensagemErro" ></p>
@@ -174,8 +171,7 @@
             class="form-control"
             id="bairro"
             size="40"
-            maxlength="40"
-            required
+            maxlength="40"            
             readonly
             />
 
@@ -203,9 +199,10 @@
             readonly
             />   
           
-          <button id="btncadastro" >Finalizar Cadastro</button>
-          
-          </div>
+          <button id="btncadastro" >Finalizar Cadastro</button>  
+          <span id="mensagem" ></span>     
+        
+        </div>
     </form>    
     <script src="../assets/js/cadastro.js" ></script>
 

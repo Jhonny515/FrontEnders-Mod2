@@ -5,11 +5,18 @@
 
 form{
     margin-top: 10px;
-    width: 1005;
+    width: 100%;
   
 }
 
-#caixa{
+/* @media (max-width: 1199.98px) {.caixa 
+  
+    
+
+} */
+
+
+#box{
     display: flex;
     flex-direction: column;    
     justify-content: space-evenly;    
@@ -21,7 +28,7 @@ form{
     width: 500px;
     height: 900px;   
     margin: 8px auto;
-    
+
 }
 
 .btncep{
@@ -47,4 +54,6 @@ input{
     border-radius: 8px;
 
 }
-
+#mensagem{
+    text-align: center;
+}
