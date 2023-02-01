@@ -1,0 +1,76 @@
+body{
+    height: initial;
+}
+
+/* Ajuste da tag main para ajuste dos cards */
+main{
+    padding: 50px 10%;
+    min-height: 90%;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Ajuste dos cards  */
+.card{
+    height: 100%;
+    background-color: #7582F4;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 12em;
+}
+
+.video{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+    flex-grow: 1;
+}
+
+/* Ajuste do modal para cores */
+.modal-content{
+    background-color: #7582F4; 
+    color: white;
+}
+
+
+
+/* Responsidade tablet  */
+@media (max-width: 612px) {
+    .row {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #direitos{
+        font-size: 5px !important;
+    }
+
+}
+
+/* Responsidade celular  */
+@media (max-width: 425px) {
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #direitos{
+        font-size: 5px !important;
+    }
+}
