@@ -1,6 +1,22 @@
-/* Background da página */
+/* Background e tamanho da página */
+html, body {
+    height: 100%;
+}
+
 main {
     background-color: #AEABAB;
+    padding: 100px 20%;
+    height: calc(100% - 151px);
+}
+@media (max-width: 612px) {
+    main {
+        padding: 10%;
+    }
+}
+@media (max-width: 425px) {
+    main {
+        padding: 3%;
+    }
 }
 
 /* Container */

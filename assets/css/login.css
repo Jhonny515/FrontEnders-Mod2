@@ -1,6 +1,18 @@
 /* Background da página */
 main {
     background-color: #AEABAB;
+    padding: 100px 20%;
+    min-height: 90%;
+}
+@media (max-width: 612px) {
+    main {
+        padding: 10%;
+    }
+}
+@media (max-width: 425px) {
+    main {
+        padding: 3%;
+    }
 }
 
 /* Container */
