@@ -3,89 +3,22 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-    }
+}
     
-    html, body{
+html, body{
     width: 100%;
     height: 100%;
-    }
+}
 
-    body{
-        font-family:  sans-serif, Helvetica;
-    }
-
-    a{
-        text-decoration: none;
-        color: #000;
-    }
+body{
+    font-family:  sans-serif, Helvetica;
+}
+    
+a{
+    text-decoration: none;
+    color: #000;
+}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
-.img1{
-    background-image: url(/assets/img/assistindo_ftb.png);
-    height: 30rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: end; 
-}      /*estilização da div imagem1 do CARROSSEL.*/
-
-.anuncioCarrossel_1{
-    background: #7a737300;
-    filter: blur(0.7px);
-    -webkit-filter: blur(0.7px);
-
-}       /*Estilização da div de anuncio da imagem 1 do carrossel */
-.img1 .anuncioCarrossel_1 h2{
-    color: #FFFFFF;
-    padding: 20px;
-    margin-bottom: 30px;
-}       /**/
-
-.img2{
-    background-image: url(/assets/img/.png);
-    height: 30rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    box-shadow: inset 0px 0px 50px #000;
-}
-
-#card-text-input{
-    margin: 100px;
-    width: auto;
-    height: auto;
-}
-
-.divInput{
-    display: flex;
-}
-
-input{
-    width: 530px;
-    height: 48px;
-    border: 1px solid #8c8c8c;
-    border-radius: 2px;
-    box-sizing: border-box;
-}
-.divButton{
-    width: 100px;
-}
-
-#button{
-    border: none;
-    background: #000;
-    color: #fafafa;
-    width: 100px;
-    height: 48px;
-}
 
 h1{
     width: 610px;
@@ -102,12 +35,124 @@ h3{
     text-align: center;
 }
 
-#card-anuncio-1{
+#carrossel{
+    z-index: -1;
+}
+
+.img1{
+    background-image: url(/assets/img/assistindo_ftb.png);
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end; 
+}      /*estilização da div imagem1 do CARROSSEL.*/
+
+.anuncioCarrossel_1{
+    background: #7a737300;
+    filter: blur(0.7px);
+    -webkit-filter: blur(0.7px);
+    font-family: 'Source Serif Pro', serif;
+}       /*Estilização da div de anuncio da imagem 1 do carrossel */
+
+.img1 .anuncioCarrossel_1 h2{
+    color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 30px;
+}       /**/
+
+.img2{
+    display: flex;
+    
+    height: 30rem;
+    
+    background: url(/assets/img/palmeirasvssantos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.anuncioCarrossel_2{
+    display: flex;
+    width: 400px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.anuncioCarrossel_2 h3{
+    color: #fafafa;
+    font-size: 30px;
+    margin: 10px;
+} 
+
+main{
+    box-shadow: inset 0px 0px 50px #000;
+
+    display: flex;
+    justify-content: center;
+}
+
+#card-text-input{
+    margin: 100px;
+    width: auto;
+    height: auto;
+}
+
+.divInput{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 80%;
+    height: 48px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.divButton{
+    width: 100px;
+}
+
+#button{
     background: #000;
     color: #fafafa;
-    height: 350px;
-    display: grid;
+    width: 100px;
+    height: 48px;
+    border: none;
+}
+
+
+
+/*estilização do primeiro card de anuncio*/
+.card-anuncio{
+    height: 300px;
     grid: 100% / 1fr 1fr;
+    background: #000;
+    color: #fafafa;
+    display: grid;
+}
+
+.col1{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.col1 img{
+    width: 300px;
+    align-self: center;
+}   
+
+.separacao{
+    height: 5px;
+    background: #8c8c8c;
+}
+
+.card{
+    background: #000;
 }
 
 .col2{
@@ -122,53 +167,33 @@ h3{
     display: block;
 }
 
-.card{
-    background: #000;
+.col2 .card p {
+    font-size: 22px;
+    padding: 20px;
+}
+/* >>>>>>>>>>*/
+
+/*estilização do segundo card de anuncio*/
+.col1-card2{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
-@media(max-width:900px){
-    .img1{
-        height: 400px;
-    }
+.col1-card2 p{
+    font-size: 22px;
+    padding: 20px;
 }
 
-@media(max-width: 680px){
-    #card-text-input span h1{
-        width: 300px;
-    }
-    
-    input{
-        width: 400px;
-    }
-    #card-text-input span{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.col2-card2 img{
+    width: 300px;
+    align-self: center;
 }
 
-@media(max-width: 520px){
-    .divInput{
-        display: inline-block;
-    }
-
-    .divButton{
-        width: 400px;
-        display: flex;
-        justify-content: center;
-    }
-
-    #button{
-        margin: 10px;
-    }
-}
-
-@media(max-width:430px){
-
-}
-@media(max-width:320px){
-    .img1{
-
-    }
+.col2-card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

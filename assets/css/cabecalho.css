@@ -4,19 +4,17 @@ header{
 }
 
 .nav{
-    height: 70px;
     background: #4A5398 !important;
 }
 
-#logo{
+#logo{      /*edição da logo*/
     display: flex;
     height: 60px;
     width: 60px;
-    margin-bottom: 15px;
-    margin-top: 8px;
+    
 }
 
-.liLogin{
+.liLogin{       /*Estilização da li que contem o link e o icon de login*/
     justify-content: space-around;
     width: 65px;
     display: flex;
@@ -24,10 +22,20 @@ header{
     list-style: none;
 }
 
-.liLogin a{
+.liLogin a{     /*Estilização do link de login*/
     display: flex;
     justify-content: center;
 }
+
+.container-fluid{       /*Estilização do menu retrátio do hamburguer*/
+    background: #4A5398;
+}
+
+.collapse{      /**/
+    position: relative;
+    z-index: 1;
+}
+
 
 #rodape{ 
     width: 100%;
@@ -37,11 +45,22 @@ header{
     display: flex;  
     justify-content: center;
     align-items: center; 
+    bottom: 0;
 }
 
 
 #rodape > span{
     font-size: 13px;
-
+    padding: 10px;
     color: white;
+}
+
+#rodape img{
+    width: 120px;
+}
+
+@media(max-width:500px){
+    #rodape{
+        height: auto;
+    }
 }
