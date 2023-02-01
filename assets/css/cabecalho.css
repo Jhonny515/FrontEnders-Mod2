@@ -29,6 +29,11 @@ header{
     color: #000;
 }
 
+.active {
+    font-weight: 600;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
 .container-fluid{       /*Estilização do menu retrátio do hamburguer*/
     background: #4A5398;
 }

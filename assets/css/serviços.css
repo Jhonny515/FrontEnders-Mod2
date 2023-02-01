@@ -36,6 +36,7 @@ img{
     justify-content: center;
     padding-bottom: 50px;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 /* Ajuste do modal para cores */
