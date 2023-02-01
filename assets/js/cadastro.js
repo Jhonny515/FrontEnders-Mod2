@@ -137,6 +137,7 @@ function validarCampos (){
     }
     else{
         $('#mensagem').text('Cadastro finalizado com sucesso!')
+        setTimeout(() => {document.location.reload()},2000)
     }
 }
   
