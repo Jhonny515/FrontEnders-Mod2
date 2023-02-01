@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/cabecalho.css">
-    <title>Quem somos</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/responseHome.css">
+    <title>FrontEnders Sports - Amistosos e campeonatos, onde quiser!</title>
 </head>
 <body>
    <header>
@@ -15,23 +17,23 @@
     <div id="cabecalho"> -->
         <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <div id="logo"></div>
+              <div id="logo"><img class="img-fluid" src="/assets/img/logo.png" alt=""></div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Quem Somos</a>
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Serviços</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contatos</a>
+                    <a class="nav-link" href="/contato.html">Contatos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Cadastro</a>
+                    <a class="nav-link" href="#">Cadastro</a>
                   </li>
                 </ul>
                 <li class="liLogin">
@@ -45,14 +47,100 @@
             </div>
         </nav>
    </header>
+   <section id="carrossel">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active background">
+          <div class="img1">
+            <div class="anuncioCarrossel_1">
+              <h2>
+                Assista ao seu time favorito, compartilhe
+                 momentos com a família!
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img2">
+
+            <div class="anuncioCarrossel_2">
+              <h3>04/02 às 18:30, ao vivo, aqui na FS-Sports.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img3"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   </section>
+
    <main>
+        <div id="card-text-input">
+          <span>
+            <h1>Futebol e basquete, campeonatos estaduais em um só lugar.</h1>
+            <h2>Assista ao vivo, onde quiser.</h2>
+            <h3>Informe seu email para criar sua assinatura.</h3>
+          </span>
 
-   </main>    
+          <div class="divInput">
+            <input type="email" name="inputEmail" placeholder="Email">
+        
+            <div class="divButton">
+              <button id="button">
+                <span>Ir</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
 
+          </div>
+        </div>
+   </main>  
+   <section class="card-anuncio">
+     <div class="col1">
+       <img src="/assets/img/NBB.jpg" alt="">
+      </div>
+      <div class="col2">
+        <div class="card">
+          <h2>NBB</h2>
+          <p>Acompanhe a liga nacional de basquete. Amistosos e campeonatos com a melhor qualidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="separacao"></div>
+
+    <section class="card-anuncio">
+      <div class="col1-card2">
+        <h2>Futebol brasileiro</h2>
+        <p>Tenha ao alcance das mãos o melhor dos estaduais e não perca nenhum lance do seu time do coração.</p>
+      </div>
+      <div class="col2-card2">
+        <div class="card">
+           <img src="/assets/img/futebol4k.png" alt="">
+         </div>
+       </div>
+    </section>
     <footer id="rodape">
-        <span>©️2023 (nome do serviço). (nome do serviço) and all other (nome do serviço) marks are trademarks of FrontEnders, LLC. All other marks are the property of their respective owners.</span>
+      <span>©️2023 (nome do serviço). (nome do serviço) and all other (nome do serviço) marks are trademarks of FrontEnders, LLC. All other marks are the property of their respective owners.</span>
+      <img src="/assets/img/Frontenders.png" alt="">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="/assets/js/cadastre-se.js"></script>
 </body>  
 </html>
