@@ -87,9 +87,17 @@ ul{
     
 }
 
+.redes svg{
+    margin: 3px;
+    
+}
+
 .redes > li{
     list-style: none;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgPerfil img{

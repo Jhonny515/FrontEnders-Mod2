@@ -7,6 +7,14 @@ header{
     background: #4A5398 !important;
 }
 
+.nav-item a{
+    font-size: 19px;
+}
+
+.nav-item a:hover{
+    color: #fafafa;
+}
+
 #logo{      /*edição da logo*/
     display: flex;
     height: 60px;
