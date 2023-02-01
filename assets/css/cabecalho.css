@@ -26,6 +26,7 @@ header{
 .liLogin a{     /*Estilização do link de login*/
     display: flex;
     justify-content: center;
+    color: #000;
 }
 
 .container-fluid{       /*Estilização do menu retrátio do hamburguer*/
