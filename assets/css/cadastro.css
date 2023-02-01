@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+form{
+    margin-top: 10px;
+    width: 100%;
+  
+}
+
+/* @media (max-width: 1199.98px) {.caixa 
+  
+    
+
+} */
+
+
+#box{
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;    
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(134, 127, 127);
+    background: rgb(184, 177, 177);
+    padding: 15px;  
+    width: 500px;
+    height: 900px;   
+    margin: 8px auto;
+
+}
+
+.btncep{
+    background-color: rgb(27, 27, 222);
+    color: white;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+input{
+    padding: 6px;
+}
+
+.mensagemErro{
+    color: red;
+    font-weight: bold;
+    
+}
+
+#btncadastro{
+    margin-top: 7px;
+    border-radius: 8px;
+
+}
+#mensagem{
+    text-align: center;
+}
