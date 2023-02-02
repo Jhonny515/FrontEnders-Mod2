@@ -1,8 +1,15 @@
 /* Background e tamanho da página */
-html, body {
-    height: 100%;
+@media (min-height: 705px){
+    html {
+        height: 100vh;
+    }
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 main {
     background-color: #AEABAB;
     padding: 100px 20%;
