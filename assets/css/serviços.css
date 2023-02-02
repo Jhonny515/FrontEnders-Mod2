@@ -59,9 +59,13 @@ img{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     flex-grow: 1;
     cursor: pointer;
+}
+
+.card-header{
+    font-weight: bold;
 }
 
 /* Ajuste do modal para cores */
@@ -82,7 +86,7 @@ img{
         align-items: center;
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 150%;
     }
 
     #direitos{
@@ -103,4 +107,22 @@ img{
     #direitos{
         font-size: 5px !important;
     }
+
+    #container{
+        width: 100%;
+    }
+}
+
+/* Ajuste button contrato */
+.btn-contratar{
+    background-color: white; 
+    color:#7582F4;
+    font-weight: bold;
+}
+
+
+.btn-contratar:hover{
+    background-color: white; 
+    color:#7582F4;
+    font-weight: bold;
 }
