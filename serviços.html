@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tag do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/serviços.css">
+    <title>Serviços</title>
+</head>
+<body>
+    <!-- Header da página -->
+    <header>
+          <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <div id="logo"><a href="/index.html"><img class="img-fluid" src="/assets/img/logo.png" alt=""></a></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./cadastro.html">Cadastro</a>
+                    </li>
+                  </ul>
+                  <li class="liLogin">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                      <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                      </svg>
+                      <a href="./login.html">Login</a>
+                  </li>
+                </div>
+              </div>
+          </nav>
+     </header>
+  
+   <main>
+
+    <h1>Serviços</h1>
+
+    <p>Aproveite nossos planos para que possa continuar assistindo a partida e não perca nenhum conteúdo do nosso canal de esportes</p>
+    <div id="container">
+     <!-- Div para cards dos vídeos -->
+      <div class="row justify-content-center">
+          <div class="col-sm">
+              <div class="card text-white mb-3">
+                  <div class="card-header text-center">Plano 1</div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Campeonato Paulista com mais de 160 horas de transmissão e com multi-telas até 3 telas:</h5>
+                    <p class="text-center">R$ 24,90</p>
+                    <p class="card-text video"><video width="100%" height="auto" src="./assets/img/Video1.mp4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" loop autoplay></video></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card text-white mb-3 d-flex">
+                <div class="card-header text-center">Plano 2</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Campeonato Paulista + Campeonato Mineiro com mais de 320 horas de transmissão e com multi-telas até 4 telas:</h5>
+                  <p class="text-center">R$ 50,00</p>
+                  <p class="card-text video"><video width="100%" height="auto" src="./assets/img/Video2.mp4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" loop autoplay></video></p>
+                </div>
+          </div>
+        </div>
+        
+        <div class="col-sm">
+          <div class="card text-white mb-3 d-flex" >
+              <div class="card-header text-center">Plano 3</div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Campeonato Paulista + Campeonato Mineiro + NBB  com mais de 480 horas de transmissão e com multi-telas até 4 telas:</h5>
+                <p class="text-center">R$ 65,00</p>
+                <p class="card-text video"><video width="100%" height="auto" src="./assets/img/Video3.mp4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" loop autoplay></video></p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <!-- Modal aplicado ao click dos videos   -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Vamos lá</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Para seguir no vídeo, faça login ou cadastre-se
+            </div>
+            <div class="modal-footer">
+              <a href="./login.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button></a>
+              <a href="./cadastro.html"><button type="button" class="btn btn-primary">Cadastre-se</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+   </main>    
+
+    <footer id="rodape">
+        <span>©️2023 Front Streaming Sport. Front Streaming Sport and all other Front Streaming Sport marks are trademarks of FrontEnders, LLC. All other marks are the property of their respective owners.</span>
+        <span id="direitos">
+          Stock footage provided by <a class="link author-link-popup" target="_blank" href="https://www.videvo.net/profile/videvo">Videvo</a>,
+          downloaded from <a class="videvo-redirect" target="_blank" href="https://www.videvo.net">videvo.net</a>
+        </span>
+        <img src="/assets/img/Frontenders.png" alt="">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="../js/serviços.js"></script>
+</body>  
+</html>

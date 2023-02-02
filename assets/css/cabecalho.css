@@ -1,3 +1,4 @@
+
 header{
     width: 100%;
     background: #535CA9;
@@ -33,6 +34,12 @@ header{
 .liLogin a{     /*Estilização do link de login*/
     display: flex;
     justify-content: center;
+    color: #000;
+}
+
+.active {
+    font-weight: 600;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container-fluid{       /*Estilização do menu retrátio do hamburguer*/
@@ -67,8 +74,14 @@ header{
     width: 120px;
 }
 
+@media(max-width: 430px){
+    #rodape > span{
+        font-size: 10px;
+    }
+}
 @media(max-width:500px){
     #rodape{
         height: auto;
     }
+    
 }
