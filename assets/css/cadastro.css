@@ -48,7 +48,7 @@ form {
 /* Campos input */
 input{
     padding: 6px;
-    background: #D9D9D9;
+    background: #D9D9D9 !important;
     border: 2px solid #C5C5C5;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
