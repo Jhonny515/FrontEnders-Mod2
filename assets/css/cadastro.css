@@ -14,13 +14,6 @@ form {
         padding: 3%;
     }
 }
-/* @media (max-width: 1199.98px) {.caixa 
-  
-    
-
-} */
-
-
 #box{
     display: flex;
     flex-direction: column;    

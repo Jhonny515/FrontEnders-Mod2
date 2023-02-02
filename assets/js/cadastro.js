@@ -1,14 +1,14 @@
 
 const limparFormulario = (endereco) =>{
     $('#endereco').val('')
-    $('#bairro').val('') 
+    $('#bairro').val('')          // declaração das variaveis vazias
     $('#cidade').val('')
     $('#estado').val('')
 } 
 
 const preencherFormulario = (endereco) =>{
     $('#endereco').val(endereco.logradouro)
-    $('#bairro').val(endereco.bairro) 
+    $('#bairro').val(endereco.bairro)         // variaveis recebendo os valores
     $('#cidade').val(endereco.localidade)
     $('#estado').val(endereco.uf)
  }
@@ -17,7 +17,7 @@ let eNumero = (numero) => /^[0-9]+$/.test(numero)
 const cepValido = (cep) => cep.length == 8 && eNumero(cep)
 
 const pesquisarCep = async () =>{
-    limparFormulario()    
+    limparFormulario()                                   //validação do cep via regex e api viacep
     const cep = $("#cep").val().replace(/[^0-9]/g,'');    
     const url = `https://viacep.com.br/ws/${cep}/json/`
 
@@ -100,9 +100,6 @@ function confirmarSenha() {
         mostrarErro($('#senhaRepeat'), 'Senhas são diferentes!')
     }
 }
-
-// const msgFinaliza = $('#btncadastro').on('click', validarCampos)  
-
  
 
 
@@ -110,7 +107,7 @@ function confirmarSenha() {
 const button = $('#btncadastro').on('click', validarCampos)
 $("form").on('submit', (e)=>{
     e.preventDefault()
-})
+})                                              //função para verificar se os campos estão vazios
 function validarCampos (){
     const mensagensErro = document.querySelectorAll('.mensagemErro')
     const todosCampos = document.querySelectorAll('input')
