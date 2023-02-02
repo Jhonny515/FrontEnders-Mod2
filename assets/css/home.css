@@ -40,7 +40,7 @@ h3{
 }
 
 .img1{
-    background-image: url(/assets/img/assistindo_ftb.png);
+    background-image: url(./assets/img/assistindo_ftb.png);
     height: 30rem;
     background-size: cover;
     background-position: center;
@@ -68,7 +68,7 @@ h3{
     
     height: 30rem;
     
-    background: url(/assets/img/palmeirasvssantos.png);
+    background: url(./assets/img/palmeirasvssantos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
