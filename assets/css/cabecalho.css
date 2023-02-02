@@ -1,0 +1,87 @@
+
+header{
+    width: 100%;
+    background: #535CA9;
+}
+
+.nav{
+    background: #4A5398 !important;
+}
+
+.nav-item a{
+    font-size: 19px;
+}
+
+.nav-item a:hover{
+    color: #fafafa;
+}
+
+#logo{      /*edição da logo*/
+    display: flex;
+    height: 60px;
+    width: 60px;
+    
+}
+
+.liLogin{       /*Estilização da li que contem o link e o icon de login*/
+    justify-content: space-around;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.liLogin a{     /*Estilização do link de login*/
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+
+.active {
+    font-weight: 600;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-fluid{       /*Estilização do menu retrátio do hamburguer*/
+    background: #4A5398;
+}
+
+.collapse{      /**/
+    position: relative;
+    z-index: 1;
+}
+
+
+#rodape{ 
+    width: 100%;
+    height: 75px;
+
+    background: #cd0bb6;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    bottom: 0;
+}
+
+
+#rodape > span{
+    font-size: 13px;
+    padding: 10px;
+    color: white;
+}
+
+#rodape img{
+    width: 120px;
+}
+
+@media(max-width: 430px){
+    #rodape > span{
+        font-size: 10px;
+    }
+}
+@media(max-width:500px){
+    #rodape{
+        height: auto;
+    }
+    
+}

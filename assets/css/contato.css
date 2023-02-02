@@ -1,0 +1,137 @@
+/* config padrão */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+    
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family:  sans-serif, Helvetica;
+    }
+    
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+h4{
+    font-weight: bold;
+}
+
+h5{
+    text-align: center;
+}
+
+/*>>>>>>>>>>>>>>>>*/
+main{
+    height: calc(100% - 151px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil{
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    background: #4A5398;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.imgPerfil{
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+}
+
+
+.imgPerfil img{
+    border-radius: 20px 20px 0px 0px;
+    height: 198px;
+    border-bottom: solid 1px #000;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+ul{ 
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    
+}
+
+.redes svg{
+    margin: 3px;
+    
+}
+
+.redes > li{
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPerfil img{
+    width: 100%;
+}
+
+.redes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/*Responsividade*/
+@media(max-width:1420px){
+    main{
+        height: auto;
+    }
+    #container{
+        display: grid;
+        grid: 60% / 1fr 1fr;
+        justify-items: center;
+    }
+
+}
+
+@media(max-width:900px){
+    main{
+        height: auto;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
